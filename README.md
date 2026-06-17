@@ -13,10 +13,7 @@ Links:
 
 ## Contents
 
-- `SKILL.md` teaches agents the REST API flow: airport search, fare search, `ignav_id` booking links, errors, and booking URL handling.
-- `examples/price_tracker.py` polls one route and prints when the cheapest fare drops.
-- `examples/agent_tool.py` shows framework-neutral tool schemas and a small handler for LLM tool loops.
-- `examples/mcp-configs/` has remote MCP setup snippets for Claude Code, Claude, and Cursor.
+This repository contains example configurations and installation details for connecting to Ignav Flights, a hosted MCP server offering live flight prices, booking links, and airport lookup. Refer to [`llms-install.md`](llms-install.md) for concise instructions, JSON config examples, and documentation links for both anonymous and authenticated access.
 
 ## REST API
 
