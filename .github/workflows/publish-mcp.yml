@@ -22,4 +22,12 @@ jobs:
         run: ./mcp-publisher login github-oidc
 
       - name: Publish server
-        run: ./mcp-publisher publish
+        run: |
+          set +e
+          ./mcp-publisher publish 2>&1 | tee publish.log
+          status=${PIPESTATUS[0]}
+          if grep -q "cannot publish duplicate version" publish.log; then
+            echo "This server version is already published."
+            exit 0
+          fi
+          exit "${status}"
