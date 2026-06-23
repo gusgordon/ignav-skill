@@ -1,8 +1,10 @@
-# Ignav Skill
+# Ignav Flights MCP Server and Agent Skill
 
 Official agent skill and examples for Ignav.
 
 Ignav is a self-serve API for live flight prices and working booking links. The first 1,000 successful requests are free, then usage is $2.00 per 1,000 successful requests.
+
+This repository contains the official Ignav `mcp-server` metadata, client configuration examples, and agent-facing installation notes.
 
 Links:
 
